@@ -19,6 +19,7 @@
         <spring-boot.version>2.4.2</spring-boot.version>
         <spring-cloud.version>2020.0.2</spring-cloud.version>
         <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
+        <mysql-connector.version>8.0.11</mysql-connector.version>
 
         <!--分离出这两个东西，是为了能够在 spring cloud alibaba不更新的时候，及时更新-->
         <seata.version>1.4.2</seata.version>
@@ -52,6 +53,12 @@
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <!-- mysql驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector.version}</version>
             </dependency>
             <!--spring cloud-->
             <dependency>
